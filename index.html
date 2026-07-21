@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Something Special For Panda Mari Begum ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff4d6d,#ff8fab,#ffd6e0);
+overflow:hidden;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.card{
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(15px);
+padding:30px;
+border-radius:25px;
+width:90%;
+max-width:500px;
+text-align:center;
+color:white;
+box-shadow:0 0 30px rgba(0,0,0,.25);
+animation:fadeIn 2s;
+z-index:2;
+}
+
+img{
+width:170px;
+height:170px;
+border-radius:50%;
+border:5px solid white;
+object-fit:cover;
+margin-bottom:20px;
+box-shadow:0 0 20px rgba(255,255,255,.6);
+}
+
+h1{
+margin-bottom:15px;
+}
+
+p{
+line-height:1.8;
+font-size:18px;
+}
+
+button{
+margin-top:25px;
+padding:15px 35px;
+border:none;
+border-radius:40px;
+background:#fff;
+color:#ff2e63;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+#message{
+display:none;
+margin-top:20px;
+font-size:22px;
+font-weight:bold;
+color:#fff;
+}
+
+.heart{
+position:absolute;
+color:#fff;
+font-size:20px;
+animation:float 8s linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh) scale(.5);
+opacity:0;
+}
+50%{
+opacity:1;
+}
+100%{
+transform:translateY(-100px) scale(1.5);
+opacity:0;
+}
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:scale(.8);}
+to{opacity:1;transform:scale(1);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="mari begum.png">
+
+<h1>My Dearest Panda Mari Begum ❤️</h1>
+
+<p>
+I'm truly sorry for hurting you.<br><br>
+
+These last two weeks have been the hardest because we kept arguing. I know I hurt your heart, and I deeply regret it.
+
+Please forgive me for my mistakes. I promise to be more patient, understand you better, and never intentionally hurt you again.
+
+You are my happiness, my peace, and the most precious person in my life.
+
+I love you so much, Bacha. ❤️
+</p>
+
+<button onclick="forgive()">Forgive Me ❤️</button>
+
+<div id="message">
+🥹 Thank you for reading. I love you forever. ❤️
+</div>
+
+</div>
+
+<script>
+
+function forgive(){
+document.getElementById("message").style.display="block";
+}
+
+function hearts(){
+const heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(20+Math.random()*30)+"px";
+heart.style.animationDuration=(5+Math.random()*5)+"s";
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},9000);
+}
+
+setInterval(hearts,300);
+
+</script>
+
+</body>
+</html>
